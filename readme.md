@@ -1,3 +1,10 @@
+## Quick Start
+```
+yarn install
+yarn create:key
+yarn start
+```
+
 ## Reference
 - [PWA入門](http://www.tohoho-web.com/ex/pwa.html)
 - [How to Build a PWA in Vanilla JavaScript](https://www.digitalocean.com/community/tutorials/js-vanilla-pwa)
