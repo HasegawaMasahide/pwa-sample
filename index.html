@@ -17,6 +17,7 @@ index.html
   <button type="button" id="exit">Exit</button>
 </div>
 <script>
+// ServiceWorkerを登録するだけ
 if ('serviceWorker' in navigator) {
     window.addEventListener("load", function() {
         navigator.serviceWorker.register('./serviceWorker.js');
