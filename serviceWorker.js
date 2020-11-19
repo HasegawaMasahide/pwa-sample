@@ -1,7 +1,7 @@
 // キャッシュしているリソースを特定するためのキー
 // バージョン管理するといいらしい(キャッシュバスティングみたいな)
 // 他サイトとユニークであることを担保しなくていいのか？→ドメインが違うから自サイトでのみユニークならよい
-const CACHE_NAME = 'pwa-sample-caches-v5';
+const CACHE_NAME = 'pwa-sample-caches-5';
 
 // キャッシュ対象とするURL
 const urlsToCache = [
@@ -22,6 +22,18 @@ self.addEventListener('install', function(event) {
         })
     );
 });
+
+// 初回以外で実行される
+self.addEventListener('activate', function(event) {  
+    event.waitUntil(
+      // 古いキャッシュを削除する(ソースコード上でCACHE_NAMEを変更しても、過去に握ったキャッシュは残り続けるため)
+      caches.keys().then(function(cache) {
+        cache.forEach(function(name) {
+          if(CACHE_NAME !== name) caches.delete(name);
+        })
+      })
+    );
+  });
 
 // リクエストが発行されたときに実行される
 self.addEventListener('fetch', function(event) {
