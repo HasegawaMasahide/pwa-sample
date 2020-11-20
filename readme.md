@@ -14,3 +14,4 @@ yarn start
 - [PWA をインストール可能にするには](https://developer.mozilla.org/ja/docs/Web/Progressive_web_apps/Installable_PWAs)
 - [http-serverによるローカル HTTPS server 構築 (5分でできる)](https://qiita.com/hbjpn/items/925c8012cd93d9165be6)
 - [Progressive Web App のデバッグ](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps?hl=ja)
+- [通知とプッシュを利用して PWA を再エンゲージ可能にするには](https://developer.mozilla.org/ja/docs/Web/Progressive_web_apps/Re-engageable_Notifications_Push)

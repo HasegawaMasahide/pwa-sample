@@ -8,7 +8,7 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: #ffc;
+    background-color: #ddd;
   }
   #hello {
     position: absolute;
@@ -30,7 +30,7 @@
     color: #fff;
     font-size: 2rem;
   }
-  #exit {
+  #submit {
     position: absolute;
     top: 70%;
     left: 35%;
