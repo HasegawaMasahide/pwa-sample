@@ -2,9 +2,6 @@
     "name": "PWAサンプルアプリケーション",
     "short_name": "PWAサンプル",
     "description": "PWAを理解するためのサンプルアプリです。",
-    "display": "fullscreen",
-    "start_url": "/",
-    "scope": "/",
     "icons": [
         {
             "src": "resources/icons/android-chrome-512x512.png",
@@ -27,6 +24,9 @@
             "type": "image/png"
         }
     ],
+    "start_url": "../index.html",
+    "scope": "../index.html",
+    "display": "fullscreen",
     "theme_color": "#B12A34",
     "background_color": "#B12A34"
 }
