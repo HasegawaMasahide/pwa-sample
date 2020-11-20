@@ -6,8 +6,8 @@ const CACHE_NAME = 'pwa-sample-caches-5';
 // キャッシュ対象とするURL
 const urlsToCache = [
     '/',
-    '/styles.css',
-    '/app.js',
+    '/src/styles.css',
+    '/src/app.js',
 ];
 
 // 初回に実行される
